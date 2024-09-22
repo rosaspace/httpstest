@@ -1,17 +1,23 @@
 # Git
+
 ## Init
 ```
+cd path/to/your/project
 git init
 ```
-## Clone
+## remote
 ```
-git clone https://github.com/rosaspace/xrwvm-fullstack_developer_capstone.git
+git remote add origin https://github.com/your_username/your_repository.git
 ```
 ## Push
 ```
 git add .
 git commit -m "commit name"
 git push -u origin master
+```
+## Clone
+```
+git clone https://github.com/rosaspace/xrwvm-fullstack_developer_capstone.git
 ```
 ## Pull
 ```
