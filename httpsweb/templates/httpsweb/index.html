@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% load static %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#3f51b5">
+    <link rel="icon" href="{% static 'icons/favicon.ico' %}" type="image/x-icon">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Hello World!你好呀！</h1>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/static/service-worker.js')
+                .then(function(registration) {
+                    console.log('Service Worker registered with scope:', registration.scope);
+                })
+                .catch(function(error) {
+                    console.log('Service Worker registration failed:', error);
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

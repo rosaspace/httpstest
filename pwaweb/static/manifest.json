@@ -1,0 +1,30 @@
+{
+  "name": "我的 PWA",
+  "short_name": "PWA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/static/icons/favicon.svg",
+      "type": "image/png",
+      "sizes": "200x200"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/static/icons/favicon.ico",
+      "sizes": "512x422",
+      "type": "image/gif",
+      "form_factor": "wide",
+      "label": "Application"
+    },
+    {
+      "src": "/static/icons/favicon.ico",
+      "sizes": "512x422",
+      "type": "image/gif",
+      "label": "Application"
+    }
+  ]
+}
