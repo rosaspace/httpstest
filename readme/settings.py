@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d%!kxt#+_)8ljku*j2a++kj*xb72e2uepwbec9j(g@hynqbuc*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','10.0.0.181','24.13.28.212','129.80.201.9','healthylife.chickenkiller.com','www.healthylife.chickenkiller.com','onlinetools.life','www.onlinetools.life']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','10.0.0.181','24.13.28.212','129.80.201.9','129.213.179.136','healthylife.chickenkiller.com','www.healthylife.chickenkiller.com','onlinetools.life','www.onlinetools.life']
 
 
 # Application definition

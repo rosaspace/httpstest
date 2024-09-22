@@ -3,11 +3,13 @@ version: '3.8'
 services:
   django:
     build: .
-    command: gunicorn readme.wsgi:application --bind 0.0.0.0:8000
+    command: gunicorn readme.wsgi:application --bind 0.0.0.0:8889
     volumes:
       - .:/app
     expose:
-      - "8000"
+      - "8889"
+    # ports:
+    #   - "8889:8889"
     networks:
       - mynetwork  # Define a network
 

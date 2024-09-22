@@ -20,6 +20,7 @@ docker run hello-world
 docker build . -t nodeapp
 docker-compose down
 docker-compose up --build
+Press CTRL + P followed by CTRL + Q  // Exiting a Docker Container (without stopping it)
 ```
 ## Clear Docker Build Cache
 ```
@@ -28,6 +29,7 @@ docker builder prune
 ## Enter Container
 ```
 docker ps
+docker attach <container_id_or_name>  // Reattach to the running container
 docker exec -it ***容器ID**** bash -l
 docker exec -it <django_container_id> /bin/sh
 ls

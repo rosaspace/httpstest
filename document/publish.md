@@ -87,6 +87,36 @@ Godaddy更改域名服务器
 ```
 dns1.p05.nsone.net
 ```
+```
+CNAML www onlinetools.life.---pure-escarpment-loj2lxh68m9dqw44w3mt4fiz.herokudns.com.
+A @ 50.63.202.1
+```
+## Heroku Publish
+```
+create app in heroku --- select github repo
+git push ……
+Create a Procfile file --- web: gunicorn your_project_name.wsgi
+```
+In settings.py
+```
+MIDDLEWARE --- 'whitenoise.middleware.WhiteNoiseMiddleware',  # Add this line
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Ensure that Whitenoise serves static files
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+ALLOWED_HOSTS = ['*']  # Not recommended for production
+```
+In requirements.txt
+```
+Django==3.2.6
+gunicorn==20.1.0
+psycopg2==2.9.1
+dj-database-url==0.5.0
+whitenoise==5.3.0
+```
 ## Visit url
 ```
 curl -k https://10.0.0.181
@@ -94,5 +124,6 @@ curl -k https://24.13.28.212
 ```
 Failed to connect 24.13.28.212
 ```
+yum -y install telnet
 telnet 24.13.28.212 443
 ```

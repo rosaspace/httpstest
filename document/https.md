@@ -6,7 +6,7 @@ onlinetools.life
 ```
 ## create crt and key
 ```
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt
 ```
 ```
 sudo systemctl status certbot.timer  // Let's Encrypt certificates are valid for 90 days. Certbot automatically installs a cron job to renew certificates, but you can verify it by running
@@ -17,11 +17,30 @@ Copy to your folder
 sudo cp selfsigned.crt /etc/ssl/certs/
 sudo cp selfsigned.key /etc/ssl/private/
 ```
+## Nginx
+```
+sudo yum install epel-release
+sudo yum install nginx
+sudo systemctl -l enable nginx
+sudo systemctl -l start nginx
+sudo systemctl -l stop nginx
+```
 Restart Nginx to apply the changes
 ```
+sudo fuser -k 80/tcp
+sudo fuser -k 443/tcp
 sudo systemctl restart nginx
 sudo systemctl stop nginx
 sudo systemctl start nginx
+```
+```
+sudo nano /var/log/nginx/error.log  // 98: Address already in use
+yum install net-tools
+sudo netstat -tulpn
+sudo kill -2 <PID>
+sudo fuser -k 80/tcp
+sudo fuser -k 443/tcp
+sudo service nginx restart
 ```
 ## https authentication
 ```
