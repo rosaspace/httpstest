@@ -2,7 +2,10 @@
 ## IP address
 ```
 24.13.28.212 车库服务器
-129.80.201.9 甲骨文云主机
+9000：thinlinc
+129.80.201.9 甲骨文云主机qmf
+8888：wechat
+129.213.179.136 甲骨文云主机lj
 ```
 ## Websocket
 ```
@@ -79,4 +82,13 @@ Add domain---Add new reocrd
 Godaddy更改域名服务器
 ```
 dns1.p05.nsone.net
+```
+## Visit url
+```
+curl -k https://10.0.0.181
+curl -k https://24.13.28.212
+```
+Failed to connect 24.13.28.212
+```
+telnet 24.13.28.212 443
 ```

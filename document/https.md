@@ -2,6 +2,7 @@
 ## My domain
 ```
 healthylife.chickenkiller.com
+onlinetools.life
 ```
 ## create crt and key
 ```
