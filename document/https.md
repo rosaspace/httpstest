@@ -52,3 +52,10 @@ openssl rsa -in /etc/nginx/ssl/nginx-selfsigned.key -check
 sudo nginx -t
 sudo systemctl restart nginx
 ```
+## Enable UFW
+```
+sudo ufw enable
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+sudo ufw status
+```
