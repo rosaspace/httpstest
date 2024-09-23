@@ -93,6 +93,31 @@ A @ 50.63.202.1
 ```
 ## Heroku Publish
 ```
+# Download the Heroku CLI tarball
+curl -L https://cli-assets.heroku.com/heroku-linux-x64.tar.gz -o heroku-linux-x64.tar.gz
+
+# Extract the tarball
+tar -xvzf heroku-linux-x64.tar.gz
+
+# Move the Heroku CLI files
+sudo mv heroku /usr/local/lib/heroku
+
+# Create a symlink to make heroku globally accessible
+sudo ln -s /usr/local/lib/heroku/bin/heroku /usr/local/bin/heroku
+
+# Verify the installation
+heroku --version
+
+# Login to Heroku
+heroku login
+```
+```
+cd C:/Users/yourusername/yourproject/
+heroku container:login
+heroku container:push web -a my-heroku-app
+heroku container:release web -a my-heroku-app
+```
+```
 create app in heroku --- select github repo
 git push ……
 Create a Procfile file --- web: gunicorn your_project_name.wsgi
