@@ -91,7 +91,7 @@ dns1.p05.nsone.net
 CNAML www onlinetools.life.---pure-escarpment-loj2lxh68m9dqw44w3mt4fiz.herokudns.com.
 A @ 50.63.202.1
 ```
-## Heroku Publish
+## Heroku login
 ```
 # Download the Heroku CLI tarball
 curl -L https://cli-assets.heroku.com/heroku-linux-x64.tar.gz -o heroku-linux-x64.tar.gz
@@ -111,16 +111,20 @@ heroku --version
 # Login to Heroku
 heroku login
 ```
+## Heroku Publish with docker
 ```
 cd C:/Users/yourusername/yourproject/
 heroku container:login
 heroku container:push web -a my-heroku-app
 heroku container:release web -a my-heroku-app
 ```
+## Heroku Publish without docker
 ```
 create app in heroku --- select github repo
-git push ……
-Create a Procfile file --- web: gunicorn your_project_name.wsgi
+```
+Create a Procfile file
+```
+web: gunicorn your_project_name.wsgi
 ```
 In settings.py
 ```
