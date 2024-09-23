@@ -44,6 +44,11 @@ sudo service redis-server stop
 ip addr show eth0
 redis-cli ping	 // 成功显示PONG
 ```
+In settings.py
+```
+# "hosts": [("redis", 6379)],
+"hosts": [('127.0.0.1', 6379)],
+```
 ## Stop redis
 ```
 sudo lsof -i :6379
