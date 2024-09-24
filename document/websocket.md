@@ -45,7 +45,7 @@ docker ps -q --filter "expose=6379"
 docker stop <container_id>
 netstat -tuln | grep 6379  // Ensure Port 8000 is Free
 ```
-## check posr in use
+## check post in use
 ```
 sudo lsof -i -P -n | grep LISTEN  // ports in use
 sudo netstat -tulpn | grep LISTEN  // user id
@@ -73,3 +73,16 @@ screen -r photo
 screen -ls
 ctl_a d
 ```
+## Visit url
+```
+curl -k https://10.0.0.181
+curl -k https://24.13.28.212
+```
+Failed to connect 24.13.28.212
+```
+yum -y install telnet
+telnet 24.13.28.212 443
+```
+## Redirect status codes and characteristics
+![image](https://github.com/user-attachments/assets/bfb5ee81-aca3-45d8-a70f-2d1e2e24b033)
+
