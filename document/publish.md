@@ -92,15 +92,14 @@ Godaddy更改域名服务器
 ```
 dns1.p05.nsone.net
 ```
-```
-CNAML www onlinetools.life.---pure-escarpment-loj2lxh68m9dqw44w3mt4fiz.herokudns.com.
-A @ 50.63.202.1
-```
-## Netlify Dafault
+## Custom service publish with Dodaddy
 ![image](https://github.com/user-attachments/assets/7869cdfe-2778-4941-825d-fef703be68bd)
 after forwarding
 ![image](https://github.com/user-attachments/assets/f4ebb199-4d50-43dc-bf23-f80e90b4a0ef)
 ![image](https://github.com/user-attachments/assets/36cf779f-7d13-4a79-980b-345c08ac2b16)
+## Heroku Publish with Dodaddy
+![image](https://github.com/user-attachments/assets/e6f53b4e-894a-4050-a7de-e738402286d2)
+![image](https://github.com/user-attachments/assets/98db5d50-daca-491e-92e0-193fbae03b41)
 
 ## Heroku login
 ```
@@ -167,3 +166,6 @@ Failed to connect 24.13.28.212
 yum -y install telnet
 telnet 24.13.28.212 443
 ```
+## Redirect status codes and characteristics
+![image](https://github.com/user-attachments/assets/bfb5ee81-aca3-45d8-a70f-2d1e2e24b033)
+
