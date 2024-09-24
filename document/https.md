@@ -8,14 +8,36 @@ onlinetools.life
 ```
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout selfsigned.key -out selfsigned.crt
 ```
-```
-sudo systemctl status certbot.timer  // Let's Encrypt certificates are valid for 90 days. Certbot automatically installs a cron job to renew certificates, but you can verify it by running
-sudo certbot renew --dry-run  // You can also test the renewal process
-```
 Copy to your folder
 ```
 sudo cp selfsigned.crt /etc/ssl/certs/
 sudo cp selfsigned.key /etc/ssl/private/
+```
+
+## Let's Encrypt
+```
+sudo apt update
+sudo apt install certbot
+```
+```
+sudo yum install epel-release
+sudo yum install certbot
+```
+```
+sudo certbot certonly --standalone -d onlinetools.life -d www.onlinetools.life
+ls /etc/letsencrypt/live/yourdomain.com/
+```
+```
+ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;
+ssl_certificate_key /etc/letsencrypt/live/yourdomain.com/privkey.pem;
+```
+```
+sudo crontab -e  //  To automatically renew your certificates
+0 */12 * * * certbot renew --quiet  // run the renewal command twice a day
+```
+```
+sudo systemctl status certbot.timer  // Let's Encrypt certificates are valid for 90 days. Certbot automatically installs a cron job to renew certificates, but you can verify it by running
+sudo certbot renew --dry-run  // You can also test the renewal process
 ```
 ## Nginx
 ```
