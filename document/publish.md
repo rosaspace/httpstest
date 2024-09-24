@@ -88,16 +88,3 @@ psycopg2==2.9.1
 dj-database-url==0.5.0
 whitenoise==5.3.0
 ```
-## Visit url
-```
-curl -k https://10.0.0.181
-curl -k https://24.13.28.212
-```
-Failed to connect 24.13.28.212
-```
-yum -y install telnet
-telnet 24.13.28.212 443
-```
-## Redirect status codes and characteristics
-![image](https://github.com/user-attachments/assets/bfb5ee81-aca3-45d8-a70f-2d1e2e24b033)
-
