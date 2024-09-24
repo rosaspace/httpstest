@@ -25,6 +25,8 @@ Godaddy更改域名服务器
 dns1.p05.nsone.net
 ```
 ## Custom service publish with Dodaddy
+![image](https://github.com/user-attachments/assets/b1aecb35-0bfb-4a75-b7ee-70e43b2a1b6d)
+or Add Forwarding
 ![image](https://github.com/user-attachments/assets/7869cdfe-2778-4941-825d-fef703be68bd)
 after forwarding
 ![image](https://github.com/user-attachments/assets/f4ebb199-4d50-43dc-bf23-f80e90b4a0ef)
