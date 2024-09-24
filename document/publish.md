@@ -57,7 +57,13 @@ docker ps -q --filter "expose=6379"
 docker stop <container_id>
 netstat -tuln | grep 6379  // Ensure Port 8000 is Free
 ```
-
+## check posr in use
+```
+sudo lsof -i -P -n | grep LISTEN  // ports in use
+sudo netstat -tulpn | grep LISTEN  // user id
+sudo ss -tulpn | grep LISTEN  // user name
+sudo lsof -i:22  // see a specific port
+```
 ## Install channels
 ```
 sudo systemctl restart nginx
