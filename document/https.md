@@ -39,6 +39,26 @@ sudo crontab -e  //  To automatically renew your certificates
 sudo systemctl status certbot.timer  // Let's Encrypt certificates are valid for 90 days. Certbot automatically installs a cron job to renew certificates, but you can verify it by running
 sudo certbot renew --dry-run  // You can also test the renewal process
 ```
+## Check Domain Configuration
+```
+nslookup yourdomain.com
+```
+For ubunto
+```
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+```
+For centos
+```
+sudo firewall-cmd --zone=public --add-port=80/tcp --permanent
+sudo firewall-cmd --zone=public --add-port=443/tcp --permanent
+sudo firewall-cmd --reload
+```
+Ensure No Other Web Server is Running
+```
+sudo systemctl stop nginx  # For Nginx
+sudo systemctl stop apache2  # For Apache
+```
 ## Nginx
 ```
 sudo yum install epel-release
