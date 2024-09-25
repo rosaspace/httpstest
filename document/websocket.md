@@ -52,6 +52,23 @@ sudo netstat -tulpn | grep LISTEN  // user id
 sudo ss -tulpn | grep LISTEN  // user name
 sudo lsof -i:22  // see a specific port
 ```
+## Check Running Processes
+```
+// Check Running Processes
+ps aux
+// Check Open Ports and the Programs Using Them
+sudo netstat -tulnvp
+// Using ss Command
+sudo ss -tuln
+// Using lsof Command
+sudo lsof -i -P -n  // see network connections and their processes.
+// Check if a Specific Port is in Use
+sudo lsof -i :8080
+// Check Running Services
+systemctl list-units --type=service --state=running
+// Using top or htop
+top  // Use top or htop for real-time monitoring of processes
+```
 ## Install channels
 ```
 sudo systemctl restart nginx
