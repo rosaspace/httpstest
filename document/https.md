@@ -3,6 +3,7 @@
 ```
 healthylife.chickenkiller.com
 onlinetools.life
+shopforself.fun
 ```
 ## create crt and key
 ```
