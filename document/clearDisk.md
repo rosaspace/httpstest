@@ -14,4 +14,10 @@
 %temp%
 mrt
 ```
+## Close network link in windows
+```
+netstat -ano
+tasklist /FI "PID eq 16184"
+taskkill /PID 5684 /F
+```
    
