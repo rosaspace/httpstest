@@ -9,6 +9,7 @@
 - https://www.runoob.com/
 ## 聚合站
 - Latent Box
+- https://www.chenyu.cn/
 ## 图表工具
 - ChartCube
 ## 文字生成视频
