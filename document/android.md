@@ -5,9 +5,20 @@
 ## Init project
 VScode
 ```
+npm install -g react-native-cli
+```
+```
+npm uninstall -g react-native-cli
 npx react-native init MyProject
+cd MyProject
+```
+```
 npx react-native start
 npx react-native run-android
+```
+```
+netstat -ano | findstr :8081
+taskkill /PID <PID> /F
 ```
 Path:C:\Users\86199\AppData\Local\Android\Sdk\emulator
 ```
