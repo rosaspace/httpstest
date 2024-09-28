@@ -14,6 +14,7 @@ cd MyProject
 ```
 ```
 npx react-native start
+npx react-native doctor
 npx react-native run-android
 ```
 ```
