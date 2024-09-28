@@ -55,3 +55,5 @@ Path:C:\Users\86199\AppData\Local\Android\Sdk\emulator
 .\emulator -avd Medium_Phone_API_35
 sudo apt install google-android-installer
 ```
+![image](https://github.com/user-attachments/assets/b3ac4dee-61c6-40da-9fea-1e0219cca422)
+
