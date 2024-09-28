@@ -21,6 +21,7 @@ echo $JAVA_HOME
 ```
 ```
 export ANDROID_HOME=~/lj/Android/Sdk
+export ANDROID_SDK_ROOT=~/lj/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
@@ -52,4 +53,5 @@ Path:C:\Users\86199\AppData\Local\Android\Sdk\emulator
 ```
 .\emulator -list-avds
 .\emulator -avd Medium_Phone_API_35
+sudo apt install google-android-installer
 ```
