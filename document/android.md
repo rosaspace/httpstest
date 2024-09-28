@@ -18,10 +18,11 @@ nano ~/.bash_profile
 source ~/.bash_profile
 echo $ANDROID_HOME
 echo $JAVA_HOME
+echo $ANDROID_SDK_ROOT
 ```
 ```
-export ANDROID_HOME=~/lj/Android/Sdk
-export ANDROID_SDK_ROOT=~/lj/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
@@ -54,6 +55,11 @@ Path:C:\Users\86199\AppData\Local\Android\Sdk\emulator
 .\emulator -list-avds
 .\emulator -avd Medium_Phone_API_35
 sudo apt install google-android-installer
+```
+Check permissions 
+```
+sudo chmod -R 755 $ANDROID_SDK_ROOT
+sudo chown -R $USER:$USER $ANDROID_SDK_ROOT
 ```
 ![image](https://github.com/user-attachments/assets/b3ac4dee-61c6-40da-9fea-1e0219cca422)
 
