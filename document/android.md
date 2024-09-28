@@ -62,4 +62,13 @@ sudo chmod -R 755 $ANDROID_SDK_ROOT
 sudo chown -R $USER:$USER $ANDROID_SDK_ROOT
 ```
 ![image](https://github.com/user-attachments/assets/b3ac4dee-61c6-40da-9fea-1e0219cca422)
-
+## Upload Photo
+```
+npm install react-native-image-picker axios
+mkdir server
+cd server
+npm init -y
+npm install express multer cors
+mkdir uploads
+node server.js
+```
