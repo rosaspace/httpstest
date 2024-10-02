@@ -12,8 +12,9 @@ git remote add origin https://github.com/your_username/your_repository.git
 ## Push
 ```
 git add .
-git commit -m "commit name"
-git push -u origin master
+git commit -m "Init commit"
+git push -u origin main
+git config --global http.sslCAInfo "E:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt"
 ```
 ## Clone
 ```
