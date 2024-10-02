@@ -31,6 +31,12 @@
 - 即梦
 ## 国产视频
 - PixVerse
-## 国产神奇
+## 国产编码
+- 文心快码
+## 国产神器
 ![image](https://github.com/user-attachments/assets/b415c82e-a5db-4bf0-929f-6bac127b8648)
 
+## 买票
+- 火车票：315263
+- 机票：252111
+- 国际机票：505141
