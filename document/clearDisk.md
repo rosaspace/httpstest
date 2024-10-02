@@ -14,6 +14,12 @@
 %temp%
 mrt
 ```
+```
+C:\Windows\Prefetch
+```
+```
+隐私和安全性--》常规--》关闭
+```
 ## Close network link in windows
 ```
 netstat -ano
