@@ -20,6 +20,10 @@ C:\Windows\Prefetch
 ```
 隐私和安全性--》常规--》关闭
 ```
+## DirectX诊断工具
+Win+R，dxdiag
+Win+R，cleanmgr
+Win+R，cleanmgr SAGERUN:99
 ## Close network link in windows
 ```
 netstat -ano
