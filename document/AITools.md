@@ -36,6 +36,8 @@
 - 文心快码
 ## 国产神器
 ![image](https://github.com/user-attachments/assets/b415c82e-a5db-4bf0-929f-6bac127b8648)
+![image](https://github.com/user-attachments/assets/2564018e-bc13-45fd-ad42-d7a718cff1ae)
+
 
 ## 买票
 - 火车票：315263
