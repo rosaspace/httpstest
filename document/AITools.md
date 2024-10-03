@@ -16,6 +16,7 @@
 ## 文字生成视频
 - invideo AI
 - heygen
+- luma dream machine
 ## 聊天工具
 - IBM watsonx
 - https://v0.dev/
