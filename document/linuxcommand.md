@@ -15,3 +15,9 @@ web performance metrics
 ## 黑客技术
 - 内网渗透
 - 后期提权
+- 渗透测试
+- 漏洞检查
+- kali linux
+- FaceNiff
+- DroidSheep
+## Reddit引流
