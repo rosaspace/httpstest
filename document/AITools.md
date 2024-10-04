@@ -10,6 +10,7 @@
 ## 聚合站
 - Latent Box
 - https://www.chenyu.cn/
+- https://www.minimaxi.com/
 ## 图表工具
 - ChartCube
 
@@ -23,8 +24,10 @@
 ## 生成图片
 - Open Art
 - midjourney
+- Coca Cola
 ## 搜索引擎
 - https://mmsearch.github.io/
+- https://explorer.globe.engineer/
 
 ## 国产对话
 - 文心一言，chatGLM，KiMi，通义千问
@@ -44,3 +47,5 @@
 - 火车票：315263
 - 机票：252111
 - 国际机票：505141
+## 广告发布
+- Taboola
