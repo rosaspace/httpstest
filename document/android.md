@@ -1,7 +1,17 @@
 # Android
 ## Platform
 ![image](https://github.com/user-attachments/assets/2b4c334f-4b6b-43bd-8ec1-819f9d0731e2)
-
+## install node
+```
+sudo dnf install nodejs
+node --version
+npm --version
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bash_profile
+nvm list-remote
+nvm install v13.6.0
+nvm list
+```
 ## Init project
 VScode create project
 ```
