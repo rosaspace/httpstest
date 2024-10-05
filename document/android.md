@@ -1,7 +1,7 @@
 # Android
 ## Platform
 ![image](https://github.com/user-attachments/assets/2b4c334f-4b6b-43bd-8ec1-819f9d0731e2)
-## install node
+## Install node
 ```
 sudo dnf install nodejs
 node --version
@@ -12,15 +12,13 @@ nvm list-remote
 nvm install v13.6.0
 nvm list
 ```
-## Init project
-VScode create project
+## Install java
 ```
-npm install -g react-native-cli
-npm uninstall -g react-native-cli
-```
-```
-npx react-native init MyProject
-cd MyProject
+sudo yum install java
+java -version
+sudo yum install java-devel
+sudo yum install java-17-openjdk
+sudo alternatives --config java
 ```
 Config enviroument
 ```
@@ -39,12 +37,18 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 ```
-sudo apt install openjdk-17-jdk
-java -version
-```
-```
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 source ~/.bash_profile
+```
+## Init project
+VScode create project
+```
+npm install -g react-native-cli
+npm uninstall -g react-native-cli
+```
+```
+npx react-native init MyProject
+cd MyProject
 ```
 Android config
 ```
