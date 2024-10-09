@@ -1,4 +1,33 @@
 # Linux Command Series
+## Check CPU
+```
+cat /proc/cpuinfo | grep processor
+cat /proc/cpuinfo | grep cores
+```
+## Check 内存
+```
+cat /proc/meminfo
+free
+free -m    # 以M为单位显示
+free -h    # 以人可读的方式显示，单位G
+```
+## Check Disk
+```
+df -h
+```
+## Check IP
+```
+ip a
+```
+## 内存 Used
+```
+top
+```
+Ubuntu下可简单使用命令安装
+```
+sudo apt install htop
+htop
+```
 ## tldr-pages
 ```
 pip3 install tldr
