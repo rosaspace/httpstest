@@ -58,8 +58,12 @@ pip install Pillow  // Python 图像库(PIL)
 Detect music
 ```
 pip install librosa // 用于音乐和音频分析
+pip install scikit-learn joblib
+python create_model.py
 ```
 Detect audio
 ```
+pip install SpeechRecognition
 pip install pydub  // 用于音频文件处理和格式转换
+choco install ffmpeg  // pydub 依赖于 ffmpeg
 ```
