@@ -48,3 +48,18 @@ conda env list
 conda deactivate
 jupyter lab --ip=0.0.0.0
 ```
+## Python AI Library
+Detect text from image
+```
+安装Tesseract OCR 引擎
+pip install pytesseract
+pip install Pillow  // Python 图像库(PIL)
+```
+Detect music
+```
+pip install librosa // 用于音乐和音频分析
+```
+Detect audio
+```
+pip install pydub  // 用于音频文件处理和格式转换
+```
