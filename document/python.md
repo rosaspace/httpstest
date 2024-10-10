@@ -67,3 +67,7 @@ pip install SpeechRecognition
 pip install pydub  // 用于音频文件处理和格式转换
 choco install ffmpeg  // pydub 依赖于 ffmpeg
 ```
+Chat
+```
+pip install flask requests python-dotenv
+```
